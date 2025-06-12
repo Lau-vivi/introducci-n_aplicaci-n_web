@@ -13,27 +13,33 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
      <link rel="stylesheet" href="estilos.css">
-
-
 </head>
 <body>
      <div id="map"></div>
      <div class="container">
-    <form action="">
-
-    <!-- Controles: Nombre, email, código -->
-    <label for="nombre">Nombre</label>
-    <input class="form-control" type="text" id="nombre" name="nombre" />
-    <label for="email">Correo electrónico</label>
-    <input class="form-control" type="text" id="nombre" name="email" />
-    <label for="codigo">Código Estudiantil</label>
-    <input class="form-control" type="text" id="nombre" name="codigo" />
+          
+     <form action="/registrar" method="POST">
+     <div class="form-grid">
+      <!-- COLUMNA IZQUIERDA (3 campos) -->
+      <div>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="fecha">Fecha del reporte:</label>
+        <input type="date" id="fecha" name="fecha">
+        <label for="direccion">Dirección aproximada:</label>
+        <input type="text" id="direccion" name="direccion">
+      </div>
+      <!-- COLUMNA DERECHA (2 campos grandes) -->
+      <div>
+        <label for="descripcion">Descripción del lugar:</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+      </div>
+    </div>
+  <!-- Botón de envío -->
     <input type="submit" value ="Agregar" class="btn-primary"/>
-
      <script src="programa.js"></script>
-    
-
-
 </body>
 
 </html>

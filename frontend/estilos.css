@@ -2,3 +2,74 @@
 #formulario{
     width: 50px;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f3e5f5, #ede7f6);
+}
+
+/* CONTENEDOR GENERAL DEL FORMULARIO */
+.formulario-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-bottom: 10px solid #ab47bc; /* Base inferior bonita */
+}
+
+/* TÍTULO DEL FORMULARIO */
+.formulario-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #222222; /* Texto negro */
+  margin-bottom: 35px;
+}
+
+/* ESTRUCTURA EN DOS COLUMNAS */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* ETIQUETAS */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333333; /* Texto normal */
+}
+
+/* INPUTS Y TEXTAREAS */
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #9c27b0;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(156, 39, 176, 0.25);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+
+
