@@ -15,6 +15,32 @@
      <link rel="stylesheet" href="../static/css/estilos.css">
 </head>
 <body>
+ <header class="bg-light py-3 border-bottom">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div>
+        <img src="../static/imagen/logo.jfif" alt=""srcset="" height="80">
+      </div>
+      <div>
+        <h1 class="titulo-morado text-center">Vía Firme – Plataforma de Reporte y Visualización de Huecos</h1>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="addPoint.html">Reportar Hueco</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_(Bogot%C3%A1)">San Cristóbal</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+
      <div id="map"></div>
      <div class="container">
           
@@ -31,15 +57,24 @@
       </div>
       <!-- COLUMNA DERECHA (2 campos grandes) -->
       <div>
-        <label for="descripcion">Descripción del lugar:</label>
-        <textarea id="descripcion" name="descripcion"></textarea>
-        <label for="comentarios">Comentarios adicionales:</label>
-        <textarea id="comentarios" name="comentarios"></textarea>
+        <label for="celular" >Celular:</label>
+        <input type="tel" id="celular" name="celular" >
+        <label for="estado">Estado del hueco:</label>
+            <select id="estado" name="estado">
+              <option value="">Seleccione</option>
+              <option value="pequeño">Pequeño</option>
+              <option value="mediano">Mediano</option>
+              <option value="grave">Grave</option>
+              <option value="crítico">Crítico</option>
+            </select>
+      <!-- CONTENEDOR DEL BOTÓN -->
+  <div class="boton-derecha">
+    <input type="submit" value="Agregar" class="btn-primary" />
+  </div>
+     <script src="../static/js/programa.js"></script>
       </div>
     </div>
-  <!-- Botón de envío -->
-    <input type="submit" value ="Agregar" class="btn-primary"/>
-     <script src="../static/js/programa.js"></script>
+
 </body>
 
 </html>
